@@ -34,3 +34,14 @@ if err != nil {
     fmt.Println("Fetch access token failed")
 }
 ```
+
+## New Release
+
+```
+...
+git add .
+git commit -m "new updates"
+
+$ git tag v0.x.x
+$ git push origin v0.x.x
+```
