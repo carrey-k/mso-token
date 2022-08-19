@@ -17,9 +17,9 @@ Get the AAD tenant and application information from your microsoft online Admini
 ```
 import github.com/kangchengkun/mso-token
 
-msotoken.TenantID = 'your-tenant-id'
-msotoken.ClientID = 'your-client-id'
-msotoken.ClientSecret = 'your-client-secret'
+msotoken.TenantID = "your-tenant-id"
+msotoken.ClientID = "your-client-id"
+msotoken.ClientSecret = "your-client-secret"
 
 // Change the default cache time
 msotoken.DefaultCacheTime = 10 * time.Minute
@@ -35,13 +35,15 @@ if err != nil {
 }
 ```
 
-## New Release
+## Contribution
+
+Follow the [Guide](https://go.dev/blog/publishing-go-modules) to publish new versions
 
 ```
 ...
 git add .
 git commit -m "new updates"
 
-$ git tag v0.x.x
-$ git push origin v0.x.x
+$ git tag vx.x.x
+$ git push origin vx.x.x
 ```
